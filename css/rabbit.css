@@ -1,0 +1,15 @@
+.header ul{
+    padding: 0;
+    margin:0 auto;
+    background-color: rgb(81, 81, 81);
+}
+.header ul li{
+    display: inline-block;
+    list-style: none;
+    color: white;
+    font-size: 20px;
+}
+a {
+  text-decoration: none; 
+  color: white;
+}

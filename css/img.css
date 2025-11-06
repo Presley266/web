@@ -1,0 +1,80 @@
+/* 1. 基础图标样式 - 所有图标共用 */
+.sprite-icon {
+    background-image: url('../images/精灵图.PNG'); 
+    background-repeat: no-repeat;
+    display: inline-block; /* 让图标可以和文字在一行 */
+    overflow: hidden; /* 防止意外显示其他部分 */
+}
+
+/* 2. 定义图标尺寸 (根据图片分析，每个图标约40x40px) */
+.icon-40x40 {
+    width: 40px;
+    height: 40px;
+}
+
+/* 3. 各个图标的精确定位 (background-position: X Y) */
+/* ------------------- 第一行 ------------------- */
+.icon-package {      /* 包装盒 (第1个) */
+    background-position: 0 0;
+}
+
+.icon-like {         /* 点赞 (第2个) */
+    background-position: -40px 0;
+}
+
+.icon-truck {        /* 货车 (第3个) */
+    background-position: -80px 0;
+}
+
+.icon-wechat-green { /* 微信绿 (第4个) */
+    background-position: -120px 0;
+}
+
+.icon-wechat-gray {  /* 微信灰 (第5个) */
+    background-position: -160px 0;
+}
+
+.icon-weibo-green {  /* 微博绿 (第6个) */
+    background-position: -200px 0;
+}
+
+.icon-weibo-gray {   /* 微博灰 (第7个) */
+    background-position: -240px 0;
+}
+
+.icon-other {        /* 未知图标 (第8个) */
+    background-position: -280px 0;
+}
+
+/* ------------------- 第二行 ------------------- */
+.icon-arrow-left {   /* 左箭头 (第1个) */
+    background-position: 0 -40px;
+}
+
+.icon-arrow-right {  /* 右箭头 (第2个) */
+    background-position: -40px -40px;
+}
+
+.icon-search {       /* 搜索 (第3个) */
+    background-position: -80px -40px;
+}
+
+.icon-cart {         /* 购物车 (第4个) */
+    background-position: -120px -40px;
+}
+
+.icon-phone {        /* 手机 (第5个) */
+    background-position: -160px -40px;
+}
+
+.icon-chat-green {   /* 对话绿 (第6个) */
+    background-position: -200px -40px;
+}
+
+.icon-chat-black {   /* 对话黑 (第7个) */
+    background-position: -240px -40px;
+}
+
+.icon-question {     /* 问号 (第8个) */
+    background-position: -280px -40px;
+}
