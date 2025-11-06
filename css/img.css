@@ -1,80 +1,109 @@
-/* 1. 基础图标样式 - 所有图标共用 */
-.sprite-icon {
+/* 基础图标样式 - 所有图标共用 */
+.all {
     background-image: url('../images/精灵图.PNG'); 
     background-repeat: no-repeat;
     display: inline-block; /* 让图标可以和文字在一行 */
     overflow: hidden; /* 防止意外显示其他部分 */
 }
-
-/* 2. 定义图标尺寸 (根据图片分析，每个图标约40x40px) */
-.icon-40x40 {
-    width: 40px;
-    height: 40px;
+/* 手机 */
+.iron-phone {
+	background-position: -159px -69px;
+	width: 13px;
+	height: 18px;
 }
-
-/* 3. 各个图标的精确定位 (background-position: X Y) */
-/* ------------------- 第一行 ------------------- */
-.icon-package {      /* 包装盒 (第1个) */
+/* 搜索 */
+.icon-search {
+    background-position: -79px -69px;
+    width: 18px;
+	height: 18px;
+}
+/* 购物车 */
+.iron-cart {
+	background-position:-119px -69px;
+    width: 24px;
+	height: 24px;
+}
+/* 小箭头 */
+.iron-small-arrow{
+    background-position: 0 -109px;
+	width: 7px;
+	height: 14px;
+}
+/* 左箭头 */
+.iron-left-arrow{
+    background-position: 0 -70px;
+	width: 13px;
+	height: 23px;
+}
+/* 右箭头 */
+.iron-right-arrow{
+    background-position: -40px -70px;
+	width: 13px;
+	height: 23px;
+}
+/* 空心 */
+.iron-empty-heart{
+    background-position: -120px -110px;
+	width: 15px;
+	height: 14px;
+}
+/* 红心 */
+.iron-red-heart{
+    background-position: -240px -110px;
+	width: 15px;
+	height: 13px;
+}
+/* 眼睛 */
+.iron-eye{
+    background-position:  -159px -110px;
+	width: 17px;
+	height: 13px;
+}
+/* 评论 */
+.iron-chat{
+    background-position: -199px -109px;
+	width: 17px;
+	height: 16px;
+}
+/* 在线客服 */
+.iron-service{
+    background-position: -250px -70px;
+	width: 30px;
+	height: 28px;
+}
+/* 问题反馈 */
+.iron-problem{
+    background-position: -350px -70px;
+	width: 29px;
+	height: 29px;
+}
+/* 公众号 */
+.iron-wechat{
+    background-position: -249px -14px;
+	width: 37px;
+	height: 30px;
+}
+/* 微博 */
+.iron-weibo{
+    background-position: -349px -14px;
+	width: 37px;
+	height: 30px;
+}
+/* 包装盒 */
+.icon-box {
     background-position: 0 0;
+	width: 58px;
+	height: 58px;
 }
-
-.icon-like {         /* 点赞 (第2个) */
-    background-position: -40px 0;
+/* 货车 */
+.icon-truck {
+    background-position: -130px 0;
+	width: 58px;
+	height: 58px;
 }
-
-.icon-truck {        /* 货车 (第3个) */
-    background-position: -80px 0;
-}
-
-.icon-wechat-green { /* 微信绿 (第4个) */
-    background-position: -120px 0;
-}
-
-.icon-wechat-gray {  /* 微信灰 (第5个) */
-    background-position: -160px 0;
-}
-
-.icon-weibo-green {  /* 微博绿 (第6个) */
-    background-position: -200px 0;
-}
-
-.icon-weibo-gray {   /* 微博灰 (第7个) */
-    background-position: -240px 0;
-}
-
-.icon-other {        /* 未知图标 (第8个) */
-    background-position: -280px 0;
-}
-
-/* ------------------- 第二行 ------------------- */
-.icon-arrow-left {   /* 左箭头 (第1个) */
-    background-position: 0 -40px;
-}
-
-.icon-arrow-right {  /* 右箭头 (第2个) */
-    background-position: -40px -40px;
-}
-
-.icon-search {       /* 搜索 (第3个) */
-    background-position: -80px -40px;
-}
-
-.icon-cart {         /* 购物车 (第4个) */
-    background-position: -120px -40px;
-}
-
-.icon-phone {        /* 手机 (第5个) */
-    background-position: -160px -40px;
-}
-
-.icon-chat-green {   /* 对话绿 (第6个) */
-    background-position: -200px -40px;
-}
-
-.icon-chat-black {   /* 对话黑 (第7个) */
-    background-position: -240px -40px;
-}
-
-.icon-question {     /* 问号 (第8个) */
-    background-position: -280px -40px;
+/* 点赞 */
+.icon-like {
+    background-position:-64px 0;
+	width: 58px;
+	height: 58px;
 }
