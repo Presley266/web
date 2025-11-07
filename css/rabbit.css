@@ -1,15 +1,53 @@
 .header ul{
-    padding: 0;
-    margin:0 auto;
-    background-color: rgb(81, 81, 81);
+  padding: 0;
+  margin:0 auto;
+  width:100%;
+  height: 60px;
+  background-color: #515151;
+  text-align: right;
 }
 .header ul li{
-    display: inline-block;
-    list-style: none;
-    color: white;
-    font-size: 20px;
+  display: inline-block;
+  list-style: none;
+  color: white;
+  font-size: 20px;
+  line-height: 60px;
+  padding: 0 15px; 
 }
-a {
+.header ul li:not(:last-child)::after{
+  content: '|';
+  margin-left: 25px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.header a {
   text-decoration: none; 
   color: white;
+}
+.nav {
+  height: 60px;
+  line-height: 60px; /* 垂直居中 */
+}
+.nav ul{
+  padding: 0;
+  width:auto;
+  height: 60px;
+  background-color: white;
+  display: inline-block;
+  vertical-align: middle; /* 让ul和img垂直居中对齐 */
+}
+.nav ul li{
+  display: inline-block;
+  list-style: none;
+  padding: 0 30px;
+}
+.nav a {
+  text-decoration: none; 
+  color: rgb(55, 55, 55);
+  font-size: 20px;
+}
+.nav .logo {
+  vertical-align: middle; /* 给logo加上垂直居中 */
+  margin-right: 20px; /* logo和导航之间的间距 */
+  margin-left: 50px; /* logo的左边距 */
+  height: 100px;
 }
