@@ -16,12 +16,19 @@
     background-position: -79px -69px;
     width: 18px;
 	height: 18px;
+  	vertical-align: middle; /* 和输入框文字垂直对齐 */
+  	margin-right: 8px;
+	position: absolute;
+	left: 10px;
+	top: 40px
 }
 /* 购物车 */
 .iron-cart {
 	background-position:-119px -69px;
     width: 24px;
 	height: 24px;
+	vertical-align: middle; /* 和输入框文字垂直对齐 */
+  	margin-right: 8px;
 }
 /* 小箭头 */
 .iron-small-arrow{

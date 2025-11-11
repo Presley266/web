@@ -1,3 +1,9 @@
+li, ul {
+	list-style: none;
+}
+a{
+  text-decoration: none; 
+}
 .header ul{
   padding: 0;
   margin:0 auto;
@@ -8,9 +14,8 @@
 }
 .header ul li{
   display: inline-block;
-  list-style: none;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 60px;
   padding: 0 15px; 
 }
@@ -20,28 +25,27 @@
   color: rgba(255, 255, 255, 0.5);
 }
 .header a {
-  text-decoration: none; 
   color: white;
 }
 .nav {
-  height: 60px;
-  line-height: 60px; /* 垂直居中 */
+  width: 100%;
+  height: 100px;
+  line-height: 100px; /* 垂直居中 */
+  background-color: white;
 }
 .nav ul{
   padding: 0;
   width:auto;
-  height: 60px;
+  height: 100px;
   background-color: white;
   display: inline-block;
   vertical-align: middle; /* 让ul和img垂直居中对齐 */
 }
 .nav ul li{
   display: inline-block;
-  list-style: none;
   padding: 0 30px;
 }
 .nav a {
-  text-decoration: none; 
   color: rgb(55, 55, 55);
   font-size: 20px;
 }
@@ -49,5 +53,62 @@
   vertical-align: middle; /* 给logo加上垂直居中 */
   margin-right: 20px; /* logo和导航之间的间距 */
   margin-left: 50px; /* logo的左边距 */
-  height: 100px;
+  height: 60px;
+}
+.search-form{
+  position: relative;
+  display: inline-block;
+  vertical-align: middle; /* 和旁边的图标垂直对齐 */
+
+}
+.search{
+  padding-left: 35px; /* 为内部图标留出空间 */
+  padding-right: 15px;
+  width:150px;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.banner{
+  padding: 0;
+  margin: 0 auto;
+  width: 1240px;
+  height: 500px;
+  background-image: url(../images/banner_1.png);
+  background-size: cover;
+  
+}
+.banner ul{
+  padding: 0;
+  width: 250px;
+  height: 500px;
+  background-color: rgba(54, 54, 54, 0.90);
+}
+.banner ul li{
+  padding-top: 18px;
+  padding-left: 20px;
+  position: relative;
+  height: 50px;
+  box-sizing: border-box;  /* 确保padding包含在高度内 */
+}
+.banner li:hover {
+	background: rgb(96, 207, 188) ;
+}
+.banner a{
+  color: white;
+  font-size: 18px;
+}
+.banner span{
+  font-size: 15px;
+}
+.banner li::after {
+  content: "";
+  position: absolute;
+  right: 0; /* 放在右边 */
+  top: 50%;
+  background-position: 0 -109px;
+	width: 7px;
+	height: 14px;
+  background-image: url('../images/精灵图.PNG');
+  padding-right: 20px;
 }
