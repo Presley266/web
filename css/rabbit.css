@@ -163,5 +163,78 @@ a{
 
 /* 当前圆点状态 */
 .banner ol li.current {
-  background-color: #f50000; /* 选中时橙色 */
+  background-color: #f50000; 
+}
+
+.new-goods{
+  width: 1240px;
+  margin: 0 auto;
+}
+
+.new-goods .title {
+  position: relative; 
+  height: 100px;
+  line-height: 60px; /* 垂直居中标题内容 */
+  margin-bottom: 10px;
+}
+
+.new-goods .title h2 {
+  font-size: 30px;
+  display: inline-block; /* 让span跟随标题在一行 */
+}
+
+.new-goods .title h2 span {
+  font-size: 14px;
+  color: #999;
+  margin-left: 15px;
+}
+
+.new-goods .title a {
+  position: absolute;
+  right: 0;
+  font-size: 14px;
+  color: #999;
+}
+
+.new-goods .intro{
+  padding: auto;
+  width: 1240px;
+  height: 410px;
+  overflow: hidden;
+}
+
+.new-goods .intro ul{
+  width: 1240px;
+  height: 410px;
+}
+
+.new-goods .intro ul li{
+  width: 300px;
+  height: 405px;
+  float: left;
+  margin: 0 3px;
+  background-color: rgb(235, 247, 235);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.new-goods .intro img{
+  width: 300px;
+  height: 300px;
+}
+.new-goods .intro h3{
+  color: black;
+  font-weight: normal;/*去除h3元素自动加粗效果*/
+}
+
+.new-goods .intro span{
+  color: rgb(233, 121, 113);
+}
+
+.new-goods .intro p{
+  border: 3px solid rgb(150, 206, 150)yellow;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  position: relative;
 }
