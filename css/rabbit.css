@@ -206,6 +206,7 @@ a{
 .new-goods .intro ul{
   width: 1240px;
   height: 410px;
+  padding: 0;
 }
 
 .new-goods .intro ul li{
@@ -237,4 +238,58 @@ a{
   top: 0;
   left: 0;
   position: relative;
+}
+
+.fresh_goods{
+  width: 1240px;
+  margin: 0 auto;
+}
+
+.fresh_goods .title{
+  position: relative; 
+  height: 100px;
+  line-height: 60px; /* 垂直居中标题内容 */
+  margin-bottom: 10px;
+}
+
+.fresh_goods .title h2 {
+  font-size: 30px;
+  display: inline-block; /* 让span跟随标题在一行 */
+}
+
+.fresh_goods .title ul{
+  height: 100px;
+}
+
+.fresh_goods .title ul li{
+  display: inline-block;
+}
+
+.fresh_goods .title .link {
+  position: absolute;
+  right: 0;
+  font-size: 14px;
+  color: #999;
+}
+
+.fresh_goods .intro{
+  width: 1240px;
+  height: 610px;
+  overflow: hidden;
+}
+
+.fresh_goods .intro ul{
+  width: 1240px;
+  height: 610px;
+  padding: 0;
+}
+
+.fresh_goods .intro ul li{
+  width: 200px;
+  height: 300px;
+  float: left;
+  margin: 0 3px;
+  background-color: rgb(235, 247, 235);
+  box-sizing: border-box;
+  text-align: center;
 }
