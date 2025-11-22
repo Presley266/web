@@ -4,6 +4,7 @@ li, ul {
 a{
   text-decoration: none; 
 }
+/* 顶部导航栏 */
 .header ul{
   padding: 0;
   margin:0 auto;
@@ -27,6 +28,7 @@ a{
 .header a {
   color: white;
 }
+/* 正文导航栏 */
 .nav {
   width: 100%;
   height: 100px;
@@ -69,6 +71,7 @@ a{
   border-radius: 8px;
   border: 1px solid #ccc;
 }
+/* 竖型导航栏加图片背景 */
 .banner{
   padding: 0;
   margin: 0 auto;
@@ -166,6 +169,7 @@ a{
   background-color: #f50000; 
 }
 
+/* 新鲜好物 */
 .new-goods{
   width: 1240px;
   margin: 0 auto;
@@ -179,6 +183,7 @@ a{
 }
 
 .new-goods .title h2 {
+  font-weight: normal;
   font-size: 30px;
   display: inline-block; /* 让span跟随标题在一行 */
 }
@@ -240,6 +245,7 @@ a{
   position: relative;
 }
 
+/* 生鲜 */
 .fresh_goods{
   width: 1240px;
   margin: 0 auto;
@@ -253,11 +259,12 @@ a{
 .fresh_goods .title h2 {
   display: inline-block;
   font-size: 30px;
+  font-weight: normal
 }
 
 .fresh_goods .title ul{
   padding: 0;
-  margin: 0;
+  margin: 0 30px;
   display: inline-block;
   position: absolute;
   right: 80px;
@@ -272,6 +279,7 @@ a{
 .fresh_goods .title ul li a{
     font-size: 14px;
     text-decoration: none;
+    color: #464545;
   }
 
 .fresh_goods .title .link {
@@ -281,7 +289,10 @@ a{
   line-height: 100px;
   font-size: 14px;
   color: #999;
-  /* text-decoration: none; */
+}
+
+.fresh_goods .title .link a{
+  color: #999;
 }
 
 .fresh_goods .intro{
@@ -312,14 +323,14 @@ a{
 
 .fresh_goods .right ul li{
   box-sizing: border-box;
-  text-align: center;
-  width: 230px;
+  margin-left: 30px;
+  width: 220px;
   height: 305px;
   float: left;
 }
 
 .fresh_goods .right img{
-  width: 230px;
+  width: 220px;
   height: 210px;
   display: block; 
 }
@@ -332,4 +343,143 @@ a{
 
 .fresh_goods .right ul li span {
   color: rgb(233, 121, 113);
+}
+/* 专题块 */
+.topic{
+  margin: 0 auto;
+  width: 1240px;
+  background-color: #e5e2e2;
+}
+
+.topic .title{
+  position: relative;
+  line-height: 60px;
+  width: 1240px;
+  height: 100px;
+}
+
+.topic .title h2{
+  font-weight: normal;
+  font-size: 30px;
+  display: inline-block;
+  color: #515151;
+}
+
+.topic .title a{
+  position: absolute;
+  right: 0;
+  top: 10px;
+  font-size: 14px;
+  color: #999;
+}
+
+.topic .list ul{
+  padding: 0;
+  margin: 0;
+}
+
+.topic .list ul li{
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.topic .list img{
+  width: 405px;
+  height: 230px;
+}
+
+.topic .list .box{
+  width: 405px;
+  height: 60px;
+  margin-top: -65px;
+  position: relative;
+}
+
+.topic .list .box h4{
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.topic .list .box p{
+  padding: 0;
+  margin: 0;
+  color: #999;
+}
+
+.topic .list .box span{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  background: white;
+  color: brown;
+}
+
+.topic .list .bottom{
+  width: 405px;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+}
+
+.topic .list .bottom .item {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: normal; /* 避免继承父的行高 */
+}
+
+.topic .list .bottom span {
+    vertical-align: middle;
+    margin-right: 5px;
+    display: inline-block;
+}
+/* 服务块 */
+.service {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+/* 底部版权声明 */
+.footer {
+    width: 1240px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #333;
+}
+
+/* 三个图标项：并列 1/3 */
+.fm-item {
+    float: left;
+    width: 33.333%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.fm-item span.all {
+    width: 60px;
+    height: 60px;
+}
+
+.fm-item p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 8px;
+}
+
+/* 分割线 */
+.footer .line {
+    width: 100%;
+    height: 1px;
+    background: #eee;
+    margin: 20px 0;
+}
+
+/* 文本 */
+.footer .copyright {
+    color: #999;
+    font-size: 14px;
+    line-height: 24px;
 }
