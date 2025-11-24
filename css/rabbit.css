@@ -5,12 +5,22 @@ a{
   text-decoration: none; 
 }
 /* 顶部导航栏 */
+
+.header{
+  background-color: #515151; 
+}
+
+.header .inner {
+    width: 1240px;
+    margin: 0 auto;
+    white-space: nowrap; /* 防止 inline-block 换行导致错位 */
+}
+
 .header ul{
   padding: 0;
   margin:0 auto;
   width:100%;
   height: 60px;
-  background-color: #515151;
   text-align: right;
 }
 .header ul li{
@@ -30,11 +40,17 @@ a{
 }
 /* 正文导航栏 */
 .nav {
-  width: 100%;
-  height: 100px;
-  line-height: 100px; /* 垂直居中 */
   background-color: white;
 }
+
+.nav .inner{
+  width: 1240px;
+  height: 100px;
+  line-height: 100px; /* 垂直居中 */
+  margin: 0 auto;
+  white-space: nowrap; /* 防止 inline-block 换行导致错位 */
+}
+
 .nav ul{
   padding: 0;
   width:auto;
@@ -522,10 +538,13 @@ a{
 
 /* 底部版权声明 */
 .footer {
-    width: 1240px;
-    margin: 0 auto;
-    text-align: center;
-    background-color: #333;
+  background-color: #333;
+}
+
+.footer .inner{
+  width: 1240px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .fm-item {
