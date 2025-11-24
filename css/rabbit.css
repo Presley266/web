@@ -442,6 +442,85 @@ a{
     margin: 0 auto;
 }
 
+.service > div {
+    display: inline-block;
+    vertical-align: top;
+    width: 24%; /* 根据需要调整 */
+    text-align: center;
+}
+
+.service h4{
+  font-weight: normal;
+  color: rgb(180, 180, 180);
+}
+
+.service ul li{
+  width: 100px;
+  height: 100px;
+  border:1px solid #eee;
+  display: inline-block;
+  text-align: center; /* 水平居中 */
+  vertical-align: top;
+}
+
+.service ul li a{
+    color: #999;
+    display: block;
+    height: 100%;
+    text-align: center;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+
+.service ul li a:hover{
+  color: rgb(96, 207, 188);
+}
+
+.service ul li p{
+  padding: 0;
+  margin: 0;
+}
+
+.service .service.app{
+  position: relative;
+}
+
+.service.app .qr {
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #eee;
+    display: inline-block;
+    float: left;
+}
+
+.service.app .info {
+  width: 180px;
+  float: left;
+  font-size: 14px;
+  color: #666;
+}
+
+
+.service.app .info a {
+  color: #999;
+  font-size: 13px;
+}
+
+.service.app::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 0;
+    width: 2px;
+    height: 180px;
+    background-color: #eee;
+}
+
+.service .service.hotline .time{
+  color: #999;
+}
+
 /* 底部版权声明 */
 .footer {
     width: 1240px;
