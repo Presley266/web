@@ -194,6 +194,12 @@ a{
   color: #999;
   margin-left: 15px;
 }
+.new-goods .title b{
+  border: 15px double rgb(211, 237, 211);
+  color: rgb(12, 89, 8);
+  font-family: KaiTi;
+  font-size: 50px;
+}
 .new-goods .title a {
   position: absolute;
   right: 0;
