@@ -1,26 +1,35 @@
+/* 全局 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 li, ul {
 	list-style: none;
 }
 a{
   text-decoration: none; 
 }
-/* 顶部导航栏 */
+.title {
+    height: 100px;
+    display: flex;
+    align-items: center;   /* 垂直居中 */
+    justify-content: space-between;
+}
 
+/* 顶部导航栏 */
 .header{
   background-color: #515151; 
 }
-
 .header .inner {
     width: 1240px;
     margin: 0 auto;
     white-space: nowrap; /* 防止 inline-block 换行导致错位 */
 }
-
 .header ul{
-  padding: 0;
-  margin:0 auto;
   width:100%;
   height: 60px;
+  margin:0 auto;
   text-align: right;
 }
 .header ul li{
@@ -38,11 +47,11 @@ a{
 .header a {
   color: white;
 }
+
 /* 正文导航栏 */
 .nav {
   background-color: white;
 }
-
 .nav .inner{
   width: 1240px;
   height: 100px;
@@ -50,11 +59,7 @@ a{
   margin: 0 auto;
   white-space: nowrap; /* 防止 inline-block 换行导致错位 */
 }
-
 .nav ul{
-  padding: 0;
-  width:auto;
-  height: 100px;
   background-color: white;
   display: inline-block;
   vertical-align: middle; /* 让ul和img垂直居中对齐 */
@@ -69,8 +74,7 @@ a{
 }
 .nav .logo {
   vertical-align: middle; /* 给logo加上垂直居中 */
-  margin-right: 20px; /* logo和导航之间的间距 */
-  margin-left: 50px; /* logo的左边距 */
+  margin: 0 20px 0 50px;
   height: 60px;
 }
 .search-form{
@@ -87,29 +91,25 @@ a{
   border-radius: 8px;
   border: 1px solid #ccc;
 }
+
 /* 竖型导航栏加图片背景 */
 .banner{
-  padding: 0;
-  margin: 0 auto;
   width: 1240px;
   height: 500px;
+  margin: 0 auto;
   background-image: url(../images/banner_1.png);
   background-size: cover;
   position: relative;
 }
 .banner ul{
-  padding: 0;
-  margin: 0;
   width: 250px;
   height: 500px;
   background-color: rgba(54, 54, 54, 0.90);
 }
 .banner ul li{
-  padding-top: 18px;
-  padding-left: 20px;
+  padding: 18px 0 0 20px;
   position: relative;
   height: 50px;
-  box-sizing: border-box;  /* 确保padding包含在高度内 */
 }
 .banner li:hover {
 	background: rgb(96, 207, 188) ;
@@ -131,37 +131,27 @@ a{
 	height: 14px;
   background-image: url('../images/精灵图.PNG');
 }
-
-/* 左箭头按钮 */
-.banner .prev {
-  position: absolute;
-  top: 50%; /* 垂直居中 */
-  left:260px;
-  background-image: url('../images/精灵图.PNG'); 
-  background-position: 0 -70px;
-	width: 13px;
-	height: 23px;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 50%;
-  padding: 10px;
-  background-origin: content-box;
-}
-
-/* 右箭头按钮 */
+/* 左右箭头 */
+.banner .prev,
 .banner .next {
   position: absolute;
-  top: 50%; /* 垂直居中 */
-  right: 20px; 
-  background-image: url('../images/精灵图.PNG');
-  background-position: -40px -70px;
-  width: 13px;
-  height: 23px;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 50%;
+  top: 50%;
+  width: 40px;
+  height: 40px;
   padding: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url('../images/精灵图.PNG');
   background-origin: content-box;
 }
-
+.banner .prev {
+  left: 260px;
+  background-position: 0 -70px;
+}
+.banner .next {
+  right: 20px;
+  background-position: -40px -70px;
+}
 /* 底部圆点区域 */
 .banner ol {
   position: absolute; 
@@ -171,7 +161,6 @@ a{
   gap: 20px; /* 圆点间距 */
 
 }
-
 /* 每个圆点 */
 .banner ol li {
   width: 10px;
@@ -179,7 +168,6 @@ a{
   border-radius: 50%;
   background-color: #ffffff;
 }
-
 /* 当前圆点状态 */
 .banner ol li.current {
   background-color: #f50000; 
@@ -190,56 +178,46 @@ a{
   width: 1240px;
   margin: 0 auto;
 }
-
 .new-goods .title {
   position: relative; 
   height: 100px;
   line-height: 60px; /* 垂直居中标题内容 */
   margin-bottom: 10px;
 }
-
 .new-goods .title h2 {
   font-weight: normal;
   font-size: 30px;
   display: inline-block; /* 让span跟随标题在一行 */
 }
-
 .new-goods .title h2 span {
   font-size: 14px;
   color: #999;
   margin-left: 15px;
 }
-
 .new-goods .title a {
   position: absolute;
   right: 0;
   font-size: 14px;
   color: #999;
 }
-
 .new-goods .intro{
-  padding: auto;
   width: 1240px;
   height: 410px;
   overflow: hidden;
 }
-
 .new-goods .intro ul{
   width: 1240px;
   height: 410px;
-  padding: 0;
+  position: absolute;
 }
-
 .new-goods .intro ul li{
   width: 300px;
   height: 405px;
   float: left;
   margin: 0 3px;
   background-color: rgb(235, 247, 235);
-  box-sizing: border-box;
   text-align: center;
 }
-
 .new-goods .intro img{
   width: 300px;
   height: 300px;
@@ -248,16 +226,17 @@ a{
   color: black;
   font-weight: normal;/*去除h3元素自动加粗效果*/
 }
-
 .new-goods .intro span{
   color: rgb(233, 121, 113);
 }
-
 .new-goods .intro p{
-  border: 3px solid rgb(150, 206, 150)yellow;
+  width: 25px;
+  height: 50px;
+  border: 3px solid rgb(150, 206, 150);
+  color: rgb(150, 206, 150);
   border-radius: 5px;
-  top: 0;
-  left: 0;
+  bottom: 330px;
+  left: 10px;
   position: relative;
 }
 
@@ -266,38 +245,30 @@ a{
   width: 1240px;
   margin: 0 auto;
 }
-
 .fresh_goods .title{
   height: 100px;
   position: relative;
 }
-
 .fresh_goods .title h2 {
   display: inline-block;
   font-size: 30px;
   font-weight: normal
 }
-
 .fresh_goods .title ul{
-  padding: 0;
   margin: 0 30px;
   display: inline-block;
   position: absolute;
   right: 80px;
   line-height: 100px;
 }
-
 .fresh_goods .title ul li{
   display: inline-block;
   margin-right: 15px;
 }
-
 .fresh_goods .title ul li a{
     font-size: 14px;
-    text-decoration: none;
     color: #464545;
   }
-
 .fresh_goods .title .link {
   display: inline-block;
   position: absolute;
@@ -306,80 +277,63 @@ a{
   font-size: 14px;
   color: #999;
 }
-
 .fresh_goods .title .link a{
   color: #999;
 }
-
 .fresh_goods .intro{
   width: 1240px;
   height: 610px;
   overflow: hidden;
 }
-
 .fresh_goods .intro > a{
   float: left;
 }
-
 .fresh_goods .intro > a img{
   width: 240px;
   height: 610px;
 }
-
 .fresh_goods .right{
   float: left;
 }
-
 .fresh_goods .right ul{
-  padding: 0;
-  margin: 0;
   width: 1000px;
   height: 610px;
 }
-
 .fresh_goods .right ul li{
-  box-sizing: border-box;
   margin-left: 30px;
   width: 220px;
   height: 305px;
   float: left;
 }
-
 .fresh_goods .right img{
   width: 220px;
   height: 210px;
   display: block; 
 }
-
 .fresh_goods .right ul li p {
-  margin: 0;
-  padding: 0;
   line-height: 1.4;
 }
-
 .fresh_goods .right ul li span {
   color: rgb(233, 121, 113);
 }
+
 /* 专题块 */
 .topic{
   margin: 0 auto;
   width: 1240px;
 }
-
 .topic .title{
   position: relative;
   line-height: 60px;
   width: 1240px;
   height: 100px;
 }
-
 .topic .title h2{
   font-weight: normal;
   font-size: 30px;
   display: inline-block;
   color: #515151;
 }
-
 .topic .title a{
   position: absolute;
   right: 0;
@@ -387,41 +341,29 @@ a{
   font-size: 14px;
   color: #999;
 }
-
 .topic .list ul{
-  padding: 0;
-  margin: 0;
+  
 }
-
 .topic .list ul li{
   display: inline-block;
   margin-right: 3px;
 }
-
 .topic .list img{
   width: 405px;
   height: 230px;
 }
-
 .topic .list .box{
   width: 405px;
   height: 60px;
   margin-top: -65px;
   position: relative;
 }
-
 .topic .list .box h4{
-  padding: 0;
-  margin: 0;
   color: white;
 }
-
 .topic .list .box p{
-  padding: 0;
-  margin: 0;
   color: #999;
 }
-
 .topic .list .box span{
   position: absolute;
   right: 0;
@@ -429,15 +371,13 @@ a{
   background: white;
   color: brown;
 }
-
 .topic .list .bottom{
   width: 405px;
   height: 50px;
   line-height: 50px;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   position: relative;
 }
-
 .topic .list .bottom .item {
     position: absolute;
     right: 0;
@@ -445,30 +385,27 @@ a{
     transform: translateY(-50%);
     line-height: normal; /* 避免继承父的行高 */
 }
-
 .topic .list .bottom span {
     vertical-align: middle;
     margin-right: 5px;
     display: inline-block;
 }
+
 /* 服务块 */
 .service {
     width: 1240px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
-
 .service > div {
     display: inline-block;
     vertical-align: top;
-    width: 24%; /* 根据需要调整 */
+    width: 24%;
     text-align: center;
 }
-
 .service h4{
   font-weight: normal;
   color: rgb(180, 180, 180);
 }
-
 .service ul li{
   width: 100px;
   height: 100px;
@@ -477,29 +414,22 @@ a{
   text-align: center; /* 水平居中 */
   vertical-align: top;
 }
-
 .service ul li a{
-    color: #999;
-    display: block;
-    height: 100%;
-    text-align: center;
-    padding-top: 25px;
-    box-sizing: border-box;
+  color: #999;
+  display: block;
+  height: 100%;
+  text-align: center;
+  padding-top: 25px;
 }
-
 .service ul li a:hover{
   color: rgb(96, 207, 188);
 }
-
 .service ul li p{
-  padding: 0;
-  margin: 0;
+  
 }
-
 .service .service.app{
   position: relative;
 }
-
 .service.app .qr {
     padding: 10px;
     width: 80px;
@@ -508,30 +438,25 @@ a{
     display: inline-block;
     float: left;
 }
-
 .service.app .info {
   width: 180px;
   float: left;
   font-size: 14px;
   color: #666;
 }
-
-
 .service.app .info a {
   color: #999;
   font-size: 13px;
 }
-
 .service.app::after {
     content: '';
     position: absolute;
-    right: -10px;
+    right: 0;
     top: 0;
     width: 2px;
-    height: 180px;
+    height: 140px;
     background-color: #eee;
 }
-
 .service .service.hotline .time{
   color: #999;
 }
@@ -540,37 +465,31 @@ a{
 .footer {
   background-color: #333;
 }
-
 .footer .inner{
   width: 1240px;
   margin: 0 auto;
   text-align: center;
 }
-
 .fm-item {
     float: left;
-    width: 33.333%;
+    width: 33%;
     text-align: center;
     margin: 20px 0;
 }
-
 .fm-item span.all {
     width: 60px;
     height: 60px;
 }
-
 .fm-item p {
     font-size: 14px;
     color: #666;
     margin-top: 8px;
 }
-
 .footer .line {
     width: 100%;
     height: 1px;
     background: #eee;
 }
-
 .footer .copyright {
     color: #999;
     font-size: 14px;
